@@ -1,0 +1,156 @@
+@import "../normalize";
+@import "../bits";
+@import "../var";
+.page-template-page-payment-php {
+    background: #e2e9fb !important;
+    color: #323232;
+    footer {
+        background: none;
+    }
+    #page {
+        width: 96%;
+        margin: 0 auto;
+        max-width: 35em;
+        padding: 5% 0;
+    }
+}
+.payment-header {
+    text-align: center;
+    .logo {
+        margin: 0 0 0.5em;
+        img {
+            //max-width: 15em;
+            max-height: 5em;
+            width: auto;
+        }
+    }
+    .welcome-text {
+        margin: 1em 0;
+        font-size: 1.1em;
+    }
+}
+.payment-body {
+    .shop_table {
+        margin: 0 auto 1.5em;
+        thead {
+            th {
+                background: $header-blue;
+                color: #fff;
+            }
+        }
+        td, th {
+            border: 0 !important;
+        }
+        .product-total,
+        .product-subtotal {
+            text-align: right;
+        }
+        .order_item {
+            border: 0;
+            td {
+                padding: 0.5em;
+            }
+        }
+        tbody {
+            border-bottom: 1px solid $header-blue;
+        }
+        tfoot {
+            tr {
+                display: none;
+                &:last-of-type {
+                    display: table-row;
+                }
+            }
+        }
+    }
+    .order_details {
+        .method {
+            display: none;
+        }
+    }
+    .wc_payment_methods {
+        display: none;
+    }
+    #payment {
+        text-align: center;
+    }
+    #place_order {
+        background: $green;
+        border: 0;
+        box-shadow: none;
+        font-size: 1.15em;
+        text-shadow: none;
+        padding: 1em 1.5em;
+        letter-spacing: 1px;
+        &:hover {
+            background: darken($green, 10%);
+        }
+    }
+}
+.payment-footer {
+    text-align: center;
+
+}
+.contact-container {
+    background: darken($light-blue, 15%);
+    margin: 0 auto;
+    width: 20em;
+    h3 {
+        color: $header-blue;
+        font-size: 1.35em;
+        font-weight: normal;
+        padding: 0.5em 1em;
+        border-bottom: 1px solid darken($light-blue, 5%);
+    }
+}
+.contact-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.15em;
+    text-align: left;
+    li {
+        vertical-align: middle;
+        @include bp(44) {
+            /*float: left;
+            width: 47.5%;
+            margin-right: 2.5%;
+            &:nth-child(even) {
+                margin-right: 0;
+            }*/
+        }
+        a {
+            display: block;
+            color: #333;
+            //background: darken($light-blue, 15%);
+            padding: 0.75em 1em;
+            border-radius: 0.25em;
+            color: $header-blue;
+        }
+    }
+    svg {
+        font-size: 1.1em;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+        fill: $header-blue;
+        &.icon-mail {
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+label[for=savePaymentMethod] {
+    display: none;
+}
+.payment-terms {
+    margin: 1em 0 0;
+    font-size: 0.8125em;
+    text-align: center;
+    color: $text-blue;
+    a {
+        color: $text-blue;
+        text-decoration: underline;
+    }
+}

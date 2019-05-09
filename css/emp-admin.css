@@ -1,0 +1,288 @@
+.emp_page_manage-sales-person #menu-dashboard,
+#toplevel_page_x-addons-home,
+#toplevel_page_vc-welcome,
+#wp-admin-bar-new-content,
+#wp-admin-bar-cs-main,
+#wp-admin-bar-edit-profile{display:none;}
+
+.role-type{
+	background: #8BC34A;
+    color: #fff;
+    padding: 1px 8px 0px;
+    font-size: 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.role-type.builder{background: #F44336;}
+.role-type.sales.person{background: #8BC34A;}
+
+#terms-and-policy-wrap{
+	display:none;
+	position: absolute;
+    top: 32vh;
+    left: 37vh;
+    z-index: 9999;
+    background: #fff;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+	width: 100%;
+    max-width: 525px;
+}
+#terms-and-policy-wrap .terms{position:relative;}
+#terms-and-policy-wrap .terms .x{
+	background: #F44336;
+    color: #fff;
+    padding: 1px 3px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 15px;
+    display: block;
+    font-size: 10px;
+	position: absolute;
+    top: -22px;
+    right: -17px;
+    cursor: hand;
+    cursor: pointer;
+}
+#terms-and-policy-wrap .terms .col-md-6{padding:0px;}
+#terms-and-policy-wrap .terms .half{padding: 0px 10px;}
+#terms-and-policy-wrap .terms .img{
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+#terms-and-policy-wrap .terms img{
+	display: block;
+    margin: 0px auto;
+    max-width: 200px;
+}
+#terms-and-policy-wrap .terms a{text-align:center;display: block;}
+.terms-and-policy-toggle{color:#337ab7;font-weight:600;cursor:hand;cursor:pointer;}
+.emp-invoice .retry{
+	display: inline-block;
+    margin-left: 5px;
+}
+.emp-invoice .retry .rbtn{
+	border: none;
+    color: #fff;
+    background: #f5a623;
+    padding: 0px 5px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+.cancelInfo {
+    background: #f44336;
+    color: #fff;
+    padding: 4px 7px 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.disable-refund,
+.disable-cancel {
+    background: #9e9e9e;
+    color: #fff;
+    padding: 4px 7px 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.btn-suspended,
+.btn-document,
+.btn-verified,
+.btn-retry {
+    background: #FF9800;
+    color: #fff;
+    padding: 5px 12px 3px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+    cursor: hand;
+    cursor: pointer;
+}
+.btn-verified{background: #8bc34a;}
+.btn-suspended{background: #f44336;}
+
+.refundInfo:hover,
+.cancelInfo:hover,
+.disable-refund:hover,
+.disable-cancel:hover{color: #fff;}
+
+form.uploadDocs{
+    background: #fff9c67a;
+    padding: 5px 15px;
+    margin: 10px 0px;
+    border: 1px solid #E91E63;
+}
+form.uploadDocs input[type="submit"]{
+    border: 0px;
+    background: #0d4d95;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+form.sendR3try{
+	background: #efefef;
+    padding: 5px 15px;
+    margin: 10px 0px;
+}
+form.sendR3try input[type="text"]{
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+form.sendR3try input[type="submit"]{
+    border: 0px;
+    background: #0d4d95;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+
+.back2list:hover,
+.back2list:active,
+.back2list:focus{
+	box-shadow: none;
+    color: #4caf50;
+}
+.back2list{
+	text-decoration: none;
+    display: inline-block;
+    background: #32373c;
+    color: #fff;
+    padding: 5px 15px 7px;
+    margin: 20px 0px 10px;
+}
+
+
+.user-trans-list{
+    padding: 10px;
+    margin: 15px 20px 20px 20px;
+    min-width: 255px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+	*max-width: 1100px;
+}
+.user-trans-list table{
+	width: 100%;
+}
+.user-trans-list tr{}
+.user-trans-list tr th{
+    background: #32373c;
+    padding: 8px 10px;
+    vertical-align: top;
+    color: #fff;
+}
+.user-trans-list tr td{
+	padding: 5px 10px;
+}
+.user-trans-list table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+.user-trans-list table tbody tr:nth-child(even) {
+    background: #f1f1f1;
+}
+.status {
+    display: inline-block;
+    padding: 2px 10px 2px;
+    background: #607d8b;
+    color: #fff;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 11px;
+    font-weight: 400;
+}
+.status.payment-successful{background: #8BC34A;}
+.status.bank-processing{background: #f5a623;}
+.status.cancelled{background: #252525;}
+.status.payment-failed{background: #252525;}
+.status.payment-reclaimed{background: #337ab7;}
+.status.awaiting-customer{background: #F44336;}
+.align-left{text-align:left;}
+.align-center{text-align:center;}
+.align-right{text-align:right;}
+
+.notice-dwolla-error {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+}
+.notice-dwolla-error div{
+	text-shadow: none;
+    position: absolute;
+    top: 20%;
+    z-index: 999;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+.notice-dwolla-error div{
+    background: #fff;
+    border-left: 7px solid #c34a66;
+    box-shadow: 0px 0px 77px 4px rgba(69, 10, 10, 1);
+    display: block;
+    padding: 15px 10px 20px;
+    font-size: 15px;
+    min-height: 10%;
+    max-width: 30%;
+    margin-left:auto;
+    margin-right:auto;
+	position:relative;
+}
+a.ActivateAccountButton{
+	padding:10px 20px 10px 20px;
+	background:#689435;
+	color:#FFF;
+	font-weight:800;
+	-webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+a.ActivateAccountButton:hover{
+	background:#537729;
+	color:#FFF;
+	text-decoration:none;
+	margin-top:3px;
+}
+.emp_page_emp-settings .notice-dwolla-error{    display: none !important;}
+.notice-dwolla-error div p em{
+	font-style: normal;
+    text-transform: none;
+    display: block;
+    font-size: 48px;
+    line-height: 1;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.notice-dwolla-error div p span{
+	color: #F44336;
+    position: absolute;
+    top: -16px;
+    right: -15px;
+    font-size: 18px;
+    line-height: 1;
+	cursor:hand;
+	cursor:pointer;
+	background:#450b08;
+	padding:10px;
+}

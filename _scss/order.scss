@@ -1,0 +1,101 @@
+.post-new-php.post-type-shop_order,
+.post-php.post-type-shop_order {
+
+}
+.post-php.post-type-shop_order {
+    .emp-admin-dash,
+    .page-title-action {
+        display: none;
+    }
+}
+#woocommerce-order-downloads,
+.add-order-shipping,
+.add-coupon {
+    display: none !important;
+}
+select[name="wc_order_action"] {
+    option[value="regenerate_download_permissions"] {
+        display: none !important;
+    }
+}
+
+.post-type-shop_order {
+    &.edit-php {
+        .page-title-action {
+            display: none;
+        }
+    }
+    &.post-php,
+    &.post-new-php {
+        #order_data {
+            .address {
+                display: none;
+            }
+            .edit_address {
+                display: block;
+                .form-field-wide {
+                    display: none;
+                }
+            }
+            .order_data_column_container {
+                > div {
+                    width: 100%;
+                    &:last-of-type {
+                        display: none;
+                    }
+                }
+            }
+            ._transaction_id_field {
+                display: none;
+            }
+            @include bp(44) {
+                .order_data_column_container {
+                    > div {
+                        width: 60%;
+                        &:first-of-type {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+        #wc-order-custom-fields {
+            display: none;
+        }
+    }
+}
+.order-heading {
+    padding-top: 2em !important;
+}
+//Hidden fields
+.woocommerce-order-data__meta,
+.wc-customer-user {
+    display: none !important;
+}
+#woocommerce-order-items .woocommerce_order_items_wrapper table.woocommerce_order_items tbody th:first-child, #woocommerce-order-items .woocommerce_order_items_wrapper table.woocommerce_order_items td:first-child {
+    padding-left: 1em !important;
+}
+#woocommerce-order-items  {
+    .woocommerce_order_items_wrapper table.woocommerce_order_items tbody th:first-child, .woocommerce_order_items_wrapper table.woocommerce_order_items td:first-child {
+        padding-left: 1em !important;
+    }
+    .wc-order-data-row {
+        padding: 1.5em 1em !important;
+    }
+}
+.role-sales_person,
+.role-shop_manager {
+    .refund-items {
+        display: none;
+    }
+}
+.role-sales_person {
+    .subsubsub {
+        .count {
+            display: none;
+        }
+    }
+    #authordiv {
+        display: none;
+    }
+}

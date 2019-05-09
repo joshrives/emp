@@ -1,0 +1,112 @@
+//hiding notice messages
+.updated,
+.update-nag {
+    display: none;
+}
+.emp-admin-dash {
+    @include bp(44) {
+        width: 45%;
+        float: left;
+        margin-right: 5%;
+    }
+}
+.new-request-container {
+    @include bp(44) {
+        width: 50%;
+        float: left;
+    }
+}
+
+.ssl-overview{
+    padding: 1.5em;
+	background:#91ca7c;
+	border:1px solid #71aa5d;
+	box-shadow: 2px 2px 18px #c7d0e7;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        box-shadow: 4px 4px 18px #b4bfdb;
+    }
+}
+.ssl-images{
+    margin: 0 0 1em;
+    text-align: center;
+    svg {
+        font-size: 4em;
+        fill: #222;
+    }
+    img {
+        vertical-align: middle;
+    }
+}
+.ssl-text{
+    color:#FFF;
+    p {
+        margin: 0 0 1em
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
+.dash-container {
+    @include bp(44) {
+        padding: 3em 0;
+    }
+}
+
+.dash-overview{
+	background:#FFF;
+	overflow:hidden;
+    position: relative;
+    padding: 70px 2em 2em;
+    margin: 0 0 2em;
+    h4 {
+    	color: $light-blue;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 60px;
+        position: absolute;
+        top: -2px;
+        left: -3px;
+        margin: 0;
+        line-height: 0.7;
+        @include bp(44) {
+            font-size: 70px;
+        }
+    }
+
+}
+.dash-stats {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        font-size: 1.5em;
+        margin: 0 0 0.5em;
+        a {
+            display: grid;
+            grid-template-columns: 80% 20%;
+            text-decoration: none;
+            color: #677ca7;
+        }
+        svg {
+            margin: 0 0.25em 0 0;
+            position: relative;
+            top: -2px;
+        }
+        @include bp(44) {
+            font-size: 2em;
+        }
+    }
+}
+.dash-welcome {
+    text-align: left;
+    color: #0a3b76;
+    text-shadow: 2px 2px 8px #919dae !important;
+    font-size: 2.25em;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 0 0 2em;
+    strong {
+        font-weight: bold;
+    }
+}

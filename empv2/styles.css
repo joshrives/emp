@@ -1,0 +1,356 @@
+#adminmenumain, #wpadminbar, #wpfooter{
+	display:none !important;
+}
+div.mainHeader{
+	background:#092a53;
+	height:180px;
+	display:block;
+	border-bottom:6px solid #84b93e;
+}
+#wpcontent, #wpfooter{
+	margin-left:0px;
+	margin-top:-33px;
+	padding:0px;
+}
+img.empLogo{
+	padding:40px;
+}
+nav.emp-style{
+	font-size:14px;
+	text-align:center;
+	background:#0b3b76 !important;
+	color:#3062a0 !important;
+}
+nav.emp-style svg{
+	font-size:20px;
+}
+
+nav.emp-style li.nav-item{
+	padding-right:40px;
+	margin:0px;
+}
+
+nav.emp-style a.nav-link{
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+	-webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+div.littleLogo{
+	position:absolute; left:0; margin-left:20px;
+}
+div.littleLogo img{
+	height:120px;
+}
+div.loggedInAs{
+	position:absolute; right:0; margin-right:20px; color:#FFF;
+}
+div.loggedInAs svg{
+	margin-top:0px;
+	margin-left:-30px;
+	position:absolute;
+}
+
+nav.emp-main-style{
+	background:#0a2b53!important;
+	font-size:24px;
+	text-align:center;
+	margin-top:20px;
+}
+nav.emp-main-style a.nav-link{
+	padding-left:60px !important;
+	padding-right:60px !important;
+	margin-left:10px;
+	margin-right:10px;
+	line-height:28px;
+	border:1px solid #e2e9fb;
+	-webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+nav.emp-main-style a:hover{
+	background:#113a71;
+	color:#FFF;
+	margin-top:-5px;
+}
+a.logoutButton{
+	font-size:10px;
+	color:#0273aa;
+	text-decoration:underline;
+	-webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+a.logoutButton:hover{
+	font-size:12px;
+	color:#FFF;
+}
+
+div.admin-footer{
+	background:#0a3b76;
+	border-top:5px solid #8bc34a;
+	color:#e2e9fb;
+}
+div.admin-footer p{
+	font-size: 11px;
+    padding-top: 15px;
+    text-align:center;
+}
+#sendCustomerInvoice > div > ul > li > a{
+	font-size:20px;
+}
+#sendCustomerInvoice input{
+	font-size:12px;
+}
+#sendCustomerInvoice select{
+	height:33px;
+	font-size:12px;
+}
+.sw-main.sw-theme-arrows{
+	   box-shadow: 0px 0px 32px 0px #ccd2e0;
+	   font-size:12px;
+}
+.sw-theme-arrows>ul.step-anchor{
+	border-radius:0px;
+}
+div.custom-admin-page h3{
+	font-size: 33px;
+    color: #0a3b76;
+    text-shadow: 2px 2px 8px #919dae !important;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+div.custom-admin-page p{
+	color:#677ca7;
+}
+div.dash-overview{
+	padding:20px;
+	background:#FFF;
+	margin-top:20px;
+	overflow:hidden;
+}
+div.dash-overview h4{
+	color: #e2e9fb;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 70px;
+    margin-top: -44px;
+    margin-left: -27px;
+}
+div.dash-overview p{
+	font-size:30px;
+}
+div.invoice-listAdmin{
+	margin-top:20px;
+}
+div.container.invoice-listAdmin > div > div > div > table > thead > tr > th{
+	font-size:14px;
+}
+div.invoice-listAdmin  h2{
+	text-shadow: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ced4e4;
+    font-size: 60px;
+}
+h3.TitleForTool{
+	text-transform:uppercase;
+}
+
+#ReportingArea p{
+	font-size:14px;
+}
+#ReportingArea .emp-search{
+	background:none;
+}
+#ReportingArea .emp-search input[type="text"]{
+	width:100%;
+}
+#ReportingArea .emp-search select{
+	width:100%;
+}
+
+div.ssloverview{
+	background:#91ca7c; 
+	border:1px solid #71aa5d; 
+	box-shadow: 2px 2px 18px #c7d0e7;
+	-webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+div.ssloverview:hover{
+	box-shadow: 4px 4px 18px #b4bfdb;
+}
+div.ssloverview div.overviewimages{
+	display:inline-block; padding:0px 20px 0px 20px; font-size:60px;
+}
+div.ssloverview div.ssltext{
+	display:inline-block;font-size:14px; padding: 0px 20px 10px 20px; color:#FFF;
+}
+
+
+
+
+
+
+
+/*Imported from Johndy's css file in the theme*/
+
+.emp-search{
+    background: #fff;
+    padding: 10px 10px;
+    margin:10px;
+}
+.emp-search input[type="text"]{
+	width: 100%;
+    padding: 5px 15px 6px;
+    font-size: 16px;
+    margin:10px;
+}
+.emp-search select{
+    padding: 5px 10px 6px;
+    font-size: 16px;
+    height: 37px;
+    position: relative;
+    top: -2px;
+    width: 100%;
+    margin:10px;
+}
+.emp-search input[type="submit"]{
+	border: 0px;
+    background: #8BC34A;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 20px 7px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    margin:10px;
+}
+
+.emp-reports{    margin-top: 25px;    padding: 0px 20px;}
+.emp-reports table{
+    width: 100%;
+    margin: 0px;
+    border-collapse: collapse;
+}
+.emp-reports table tr th{    border: 1px solid #ccc;    background: #fff;    padding: 5px 10px;    line-height: 1;}
+.emp-reports table tr td{
+	border: 1px solid #ccc;
+    padding: 5px 15px 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.emp-reports table tr td:first-child{
+	width: 25px;
+    text-align: center;
+}
+.emp-reports table tr td:last-child{
+	width: 80px;
+    text-align: center;
+}
+.emp-reports table .td{max-width:35px;}
+.emp-reports table .vmore{
+	text-shadow: none;
+    display: block;
+    white-space: nowrap;
+    background: #8bc34a;
+    color: #fff;
+    font-weight: 300;
+    padding: 0px 10px 2px;
+    border-radius: 4px;
+}
+
+.emp-reports table tr td .status {
+background: #f44336;
+    color: #fff;
+    padding: 4px 13px 5px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.emp-reports table tr td.not{
+	width: 60px;
+    text-align: right;
+}
+.emp-reports table tr td .status.sales_person{background: #4caf50;}
+.emp-reports table tr td a{text-decoration:none;}
+
+
+
+div.searchstring-users{
+	width:99%;
+}
+div.searchstring-header{
+	text-align:center;
+	background:#0c2649;
+	color:#FFF;
+	padding:10px;
+}
+div.searchstring-result{
+	text-align:center;
+	background:none;
+	color:#000;
+	padding:10px;
+}
+div.searchstring-result:nth-child(odd){
+	background:#d0dcf8;
+}
+.alignleft{
+	text-align:left;
+}
+
+
+.user-info-tab{
+	background: #fff;
+    border-collapse: collapse;
+	width: 100%;
+    max-width: 700px;
+}
+.user-info-tab{margin: 0px 20px 20px;}
+.user-info-tab tr{}
+.user-info-tab tr td:first-child{width:110px;}
+
+.user-info-tab tr td{
+	padding: 5px 10px;
+    font-size: 14px;
+    line-height: 125%;
+    border: 1px solid #ccc;
+}
+
+div.reporting-user-info-row{
+	margin:10px;
+}
+div.customer-report-info{
+	background:#0c346b;
+	color:#FFF;
+	padding:20px;
+}
+div.reporting-user-info-row .urole{
+	background: #4CAF50;
+    color: #fff;
+    padding: 4px 15px 6px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight:800;
+    text-transform: uppercase;
+    width:100%;
+    text-align:center;
+}
+div.customer-report-info p{
+	font-size:15px;
+	
+}

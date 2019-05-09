@@ -1,0 +1,48 @@
+/*!
+	Admin CSS
+*/
+@import "bits";
+@import "var";
+
+//Hide unnecessary chrome rather than delete, just in case
+#adminmenuwrap,
+#adminmenuback,
+#screen-meta-links {
+    display: none;
+}
+#wpcontent,
+#wpfooter {
+    margin: 0 !important;
+    padding-left: 0 !important;
+}
+#wpbody {
+    margin: 0 auto;
+    width: 94%;
+    max-width: 100em;
+    padding-top: 1.5em;
+    @include bp(44) {
+        padding-top: 0;
+    }
+}
+svg.icon {
+    margin: 0;
+    line-height: 1;
+}
+.wp-admin {
+    background: $light-blue;
+}
+#wpadminbar {
+    display: none;
+}
+html.wp-toolbar {
+    padding: 0;
+}
+@import "icons";
+@import "modules";
+@import "header";
+@import "order";
+@import "dash";
+@import "footer";
+@import "users";
+@import "request";
+@import "reporting";

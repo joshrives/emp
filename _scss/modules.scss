@@ -1,0 +1,340 @@
+/*Basic Grid*/
+.wrapper {
+	margin: 0 auto;
+    width: 94%;
+    max-width: 100em;
+}
+.med-wrap {
+	position: relative;
+	width: 90%;
+	max-width: 55em;
+	margin: 0 auto;
+	@include bp(50) {
+		width: 100%;
+	}
+}
+
+.sm-wrap {
+	position: relative;
+	width: 90%;
+	max-width: 42em;
+	margin: 0 auto;
+	@include bp(50) {
+		width: 100%;
+	}
+}
+
+.half {
+	margin-bottom: 2em;
+	@include bp(50) {
+		float: left;
+		width: 47.5%;
+		margin-bottom: 0;
+		&.first {
+			margin-right: 5%;
+		}
+	}
+}
+.halves {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin: 0 0 1em;
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 47.5%;
+			margin: 0 5% 1em 0;
+			&:nth-child(even) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.two-third {
+	@include bp(50) {
+		float: left;
+		width: 65%;
+		&.first {
+			margin-right: 5%;
+			&.right {
+				float: right;
+				margin: 0 0 0 5%;
+			}
+		}
+	}
+}
+.third {
+	@include bp(50) {
+		float: left;
+		width: 30%;
+		&.first {
+			margin-right: 5%;
+			&.right {
+				float: right;
+				margin: 0 0 0 5%;
+			}
+		}
+	}
+}
+.four-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		float: left;
+		width: 46%;
+		margin: 0 8% 1em 0;
+		&:nth-child(even) {
+			margin: 0;
+		}
+	}
+	@include bp(50) {
+		> li {
+			width: 22%;
+			margin: 0 4% 1em 0;
+			&:nth-child(even) {
+				margin: 0 4% 1em 0;
+			}
+			&:last-child, &:nth-child(4n) {
+				margin: 0 0 1em;
+			}
+			&:nth-child(4n+5) {
+				clear: left;
+			}
+		}
+	}
+}
+.three-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin-bottom: 1.5em;
+	}
+	@include bp(50) {
+		> li {
+			float: left;
+			width: 30%;
+			margin: 0 5% 1em 0;
+			&:last-child, &:nth-child(3n) {
+				margin: 0 0 1em;
+			}
+			&:nth-child(3n+4) {
+				clear: left;
+			}
+		}
+	}
+}
+.two-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin-bottom: 1em;
+	}
+	&.always-two {
+		> li {
+			float: left;
+			width: 48%;
+			margin: 0 4% 2em 0;
+			&:last-child, &:nth-child(even) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 48%;
+			margin: 0 4% 2em 0;
+			&:last-child, &:nth-child(even) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.centered-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	li {
+		display: inline-block;
+		max-width: 47%;
+		margin: 0 6% 1em 0;
+		vertical-align: top;
+		&:nth-child(even) {
+			margin: 0 0 1em;
+		}
+	}
+	@include bp(44) {
+		li {
+			max-width: 30%;
+			margin: 0 5% 1em 0;
+			&:nth-child(even) {
+				margin: 0 5% 1em 0;
+			}
+			&:last-child, &:nth-child(3n) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: #333;
+	background: rgba(41,41,41,0.9);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.overlay-content {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	backface-visibility: hidden;
+	transform: translate(-50%, -50%);
+}
+.overlay-show {
+	visibility: visible;
+}
+.overlay-show ~ .overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.hideModal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	font-size: 2em;
+}
+.grid {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    &.two {
+        grid-template-columns: 1fr;
+        @include bp(50) {
+            grid-template-columns: 1fr 1fr;
+        }
+		> a,
+        > div {
+            &:nth-of-type(1) {
+                -ms-grid-row: 1;
+                -ms-grid-column: 1;
+            }
+            &:nth-of-type(2) {
+                -ms-grid-row: 2;
+                -ms-grid-column: 1;
+            }
+            @include bp(50) {
+                &:nth-of-type(1) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 1;
+                }
+                &:nth-of-type(2) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 2;
+                }
+            }
+        }
+    }
+    &.three {
+        grid-template-columns: 1fr;
+        @include bp(50) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+		> a,
+        > div {
+            &:nth-of-type(1) {
+                -ms-grid-row: 1;
+                -ms-grid-column: 1;
+            }
+            &:nth-of-type(2) {
+                -ms-grid-row: 2;
+                -ms-grid-column: 1;
+            }
+            &:nth-of-type(3) {
+                -ms-grid-row: 3;
+                -ms-grid-column: 1;
+            }
+            @include bp(50) {
+                &:nth-of-type(1) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 1;
+                }
+                &:nth-of-type(2) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 2;
+                }
+                &:nth-of-type(3) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 3;
+                }
+            }
+        }
+		> a,
+        > div {
+            &:nth-of-type(1) {
+                -ms-grid-row: 1;
+                -ms-grid-column: 1;
+            }
+            &:nth-of-type(2) {
+                -ms-grid-row: 1;
+                -ms-grid-column: 2;
+            }
+            &:nth-of-type(3) {
+                -ms-grid-row: 2;
+                -ms-grid-column: 1;
+            }
+            &:nth-of-type(4) {
+                -ms-grid-row: 2;
+                -ms-grid-column: 2;
+            }
+            @include bp(50) {
+                &:nth-of-type(1) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 1;
+                }
+                &:nth-of-type(2) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 2;
+                }
+                &:nth-of-type(3) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 3;
+                }
+                &:nth-of-type(4) {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 4;
+                }
+            }
+        }
+    }
+    &.four {
+        grid-template-columns: 1fr 1fr;
+        @include bp(50) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}

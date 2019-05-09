@@ -1,0 +1,13 @@
+#wpfooter {
+    padding: 0;
+    > p {
+        display: none;
+    }
+}
+.emp-admin-footer {
+    text-align: center;
+    background: #0a3b76;
+    border-top: 0.25em solid $green;
+    color: $light-blue;
+    padding: 0.75em 0;
+}

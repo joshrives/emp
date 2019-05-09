@@ -1,0 +1,97 @@
+.order-report {
+    background: #fff;
+    padding: 1em;
+}
+.report-box {
+    border: 1px solid #dfdfdf;
+    padding: 1em;
+    span {
+        font-size: 1.618em;
+        line-height: 1.2em;
+        color: #464646;
+        font-weight: 400;
+        display: block;
+        font-family: HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',sans-serif;
+    }
+    strong {
+        color: #aaa;
+        font-weight: normal;
+    }
+}
+.nav-tab-wrapper {
+    border-color: $text-blue;
+}
+.nav-tab-active {
+    background: darken($light-blue, 10%);
+    //color: #fff;
+    border-color: $text-blue;
+    border-bottom-color: darken($light-blue, 10%);
+}
+.woocommerce-reports-wide .postbox .chart-with-sidebar, .woocommerce-reports-wrap .postbox .chart-with-sidebar {
+    padding: 1em !important;
+    @include bp(44) {
+        padding: 12px 12px 12px 249px !important;
+    }
+}
+.woocommerce-reports-wide .postbox .chart-with-sidebar .chart-sidebar, .woocommerce-reports-wrap .postbox .chart-with-sidebar .chart-sidebar {
+    float: none !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    @include bp(44) {
+        width: 225px !important;
+        margin-left: -237px !important;
+        float: left !important;
+    }
+}
+.stats_range {
+    .export_csv {
+        float: none !important;
+        @include bp(44) {
+            float: right !important;
+        }
+    }
+    ul {
+        li {
+            font-size: 0.8125em !important;
+            @include bp(44) {
+                font-size: 1em !important;
+            }
+        }
+    }
+}
+.report-table {
+    max-width: 40em;
+    width: 100%;
+    padding: 0.5em;
+    th {
+        text-align: left;
+        color: #0073aa;
+    }
+    td {
+        font-size: 1.15em;
+        padding: 1em 0.5em;
+        //border-bottom: 1px solid #aaa;
+        &:first-of-type {
+            font-weight: bold;
+        }
+    }
+    tr {
+        background: #fff;
+        &:nth-of-type(even) {
+            background: #e5e5e5;
+        }
+    }
+    thead {
+        tr {
+            background: none;
+            border-bottom: 0.15em solid $header-blue;
+        }
+        th {
+            padding: 0.25em 0 0.5em;
+            border-bottom: 0.15em solid $header-blue;
+        }
+    }
+    tbody {
+        border: 1px solid #e5e5e5;
+    }
+}
